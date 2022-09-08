@@ -14,6 +14,7 @@
         <div class='posts'>
             <div class="content">
                 <div class="content_post">
+                    <small>{{ $post->user->name }}</small>
                     <h3>本文</h3>
                     <p>{{ $post->body }}</p>
                     <p class="updated_at">{{ $post->updated_at }}</p>

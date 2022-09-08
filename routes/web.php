@@ -18,6 +18,7 @@ Route::group(['middleware' => ['auth']], function (){
     Route::put('/posts/{post}', 'PostController@update');
     Route::get('/posts', 'PostController@store');
     Route::get('/categories/{category}','CategoryController@index');
+    Route::get('/user', 'UserController@index');
     Route::post('/posts', 'PostController@store');
     Route::delete('/posts/{post}','PostController@delete');
 });
@@ -26,3 +27,4 @@ Route::group(['middleware' => ['auth']], function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
